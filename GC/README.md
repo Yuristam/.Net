@@ -44,6 +44,6 @@ The heap memory is organized into 3 generations so that various objects with dif
 * Garbage collection handles memory allocation safely so that no object uses the contents of another object mistakenly.
 * The constructors of newly created objects do not have to initialize all the data fields as garbage collection clears the memory of objects that were previously released.
 
-## Links
+## References & Links
 
 * *Garbage Collection in C# | .NET Framework* https://www.geeksforgeeks.org/garbage-collection-in-c-sharp-dot-net-framework/
