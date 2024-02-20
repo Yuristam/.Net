@@ -205,7 +205,7 @@ A code which is directly executed by the operating system is known as Unmanaged 
 
 ---
 
-### Basic Architecture and Component Stack of .NET Framework
+## Basic Architecture and Component Stack of .NET Framework
 
 1. **CLR (Common Language Runtime):** It is a run-time environment that executes the code written in any .NET programming language. .Net framework provides support for many languages like C#, F#, C++, Cobra, Jscript.Net, VB.Net, Oxygene, etc.
 
