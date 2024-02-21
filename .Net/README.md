@@ -39,7 +39,7 @@ The .NET Framework includes two main components: the Common Language Runtime (CL
 
 ---
 
-### FCL (Framework Class Library)
+### Framework Class Library (FCL)
 
 The Framework Class Library or FCL provides the system functionality in the *.NET Framework* as it has various classes, data types, interfaces, etc. to perform multiple functions and build different types of applications such as desktop applications, web applications, mobile applications, etc. The Framework Class Library is integrated with the **Common Language Runtime (CLR)** of the .NET framework and is used by all the .NET languages such as C#, F#, Visual Basic .NET, etc.
 
@@ -59,7 +59,27 @@ Details about the Categories in the Framework Class Library are given as follows
 
 ---
 
-### CLR (Common Language Runtime)
+### Base Class Library (BCL)
+
+**Base Class Library (BCL):** The Base Class Library is a set of fundamental classes and types that are part of a programming platform. These classes provide essential functionality such as basic data types, exception handling, input/output operations, string manipulation, and more. In the context of .NET, the BCL includes core namespaces like `System`, `System.Collections`, `System.IO`, `System.Text`, and so on. These classes form the foundation upon which more specialized functionality can be built.
+
+**Framework Class Library (FCL):** The Framework Class Library is an extended collection of classes, types, and components built on top of the Base Class Library. It provides higher-level functionality that is specific to certain application domains or industries. The FCL includes classes for *GUI (Graphical User Interface) development*, *web development*, *database access*, *networking*, and more. In the context of .NET, the FCL is typically associated with the .NET Framework or the .NET Core/.NET 5+ platforms, depending on the version.
+
+**Key Components of BCL**
+
+BCL consists of critical components like the **System namespace**, which houses fundamental types like *String* and *Array*. It also includes *collections*, *diagnostics*, and *the core of the .NET framework*.
+
+**Key Components of FCL**
+
+Expanding on BCL, FCL introduces more specialized components. It includes `ASP.NET` for *web development*, `Windows Forms` for *desktop applications*, and `ADO.NET` for *data access*. FCL is a comprehensive library for building diverse applications.
+
+**BCL and FCL Relationship**
+
+BCL is the core subset of FCL, forming the foundation upon which FCL builds. They are symbiotic, with BCL providing the essential groundwork and FCL extending it to cover a broader spectrum of application development.
+
+---
+
+### Common Language Runtime (CLR)
 
 Below diagram illustrate how CLR is associated with the operating system/hardware along with the class libraries. Here, the runtime is actually CLR.
 
@@ -73,7 +93,7 @@ Below diagram illustrate how CLR is associated with the operating system/hardwar
 
 * Suppose you have written a C# program and save it in a file which is known as the Source Code.
 * Language specific compiler compiles the source code into the MSIL(Microsoft Intermediate Language) which is also known as the CIL(Common Intermediate Language) or IL(Intermediate Language) along with its metadata. Metadata includes all the types, actual implementation of each function of the program. MSIL is machine-independent code.
-* Now CLR comes into existence. CLR provides the services and runtime environment to the MSIL code. Internally CLR includes the JIT(Just-In-Time) compiler which converts the MSIL code to machine code which further executed by CPU. CLR also uses the .NET Framework class libraries. *Metadata* provides information about the programming language, environment, version, and class libraries to the CLR by which CLR handles the MSIL code. As CLR is common so it allows an instance of a class that written in a different language to call a method of the class which written in another language.
+* Now CLR comes into existence. CLR provides the services and runtime environment to the MSIL code. Internally CLR includes the JIT(Just-In-Time) compiler which converts the MSIL code to machine code which further executed by CPU. CLR also uses the .NET Framework class libraries. **Metadata** provides information about the programming language, environment, version, and class libraries to the CLR by which CLR handles the MSIL code. As CLR is common so it allows an instance of a class that written in a different language to call a method of the class which written in another language.
 
 <img src="image5.jpg" width="600">
 
@@ -102,7 +122,7 @@ Every programming language has its own data type system, so CTS is responsible f
 **Garbage Collector:** 
 It is used to provide the Automatic Memory Management feature. If there was no garbage collector, programmers would have to write the memory management codes which will be a kind of overhead on programmers. 
 
-**JIT(Just In Time Compiler):** 
+**Just In Time Compiler (JIT):** 
 It is responsible for converting the CIL(Common Intermediate Language) into machine code or native code using the Common Language Runtime environment. 
 
 ---
@@ -240,17 +260,17 @@ A code which is directly executed by the operating system is known as Unmanaged 
 
 ---
 
-## Abbreviations
+## Abbreviations and Short Examples
 
-* CIL - Common Intermediate Language | MSIL - Microsoft Intermediate Language | IL - Intermediate Language
-* CLR - Common Language Runtime
-* CLI - Common Language Infrastructure
-* CTS - Common Type System
-* CLS - Common Language Specification
-* JIT - Just In Time Compiler
-* FCL - Framework Class Libraries
-* BCL - Base Class Libraries
-* SDK - Software Development Kit
+* **CIL - Common Intermediate Language | MSIL - Microsoft Intermediate Language | IL - Intermediate Language**
+* **CLR - Common Language Runtime**
+* **CLI - Common Language Infrastructure**
+* **CTS - Common Type System** (`int`, `double`, `string`, `char`, etc.)
+* **CLS - Common Language Specification** (`for loop`, `while loop`, `do-while`, `switch case`, `if-else`, etc.)
+* **JIT - Just In Time Compiler**
+* **FCL - Framework Class Libraries** (`ASP.NET` for *web development*, `Windows Forms` for *desktop applications*, and `ADO.NET` for *data access*, etc.)
+* **BCL - Base Class Libraries** (`System`, `System.Collections`, `System.IO`, `System.Text`, etc.)
+* **SDK - Software Development Kit**
 
 ## .NET ecosystem
 
@@ -270,6 +290,7 @@ A code which is directly executed by the operating system is known as Unmanaged 
 
 * *Microsoft Learn* https://learn.microsoft.com/
 * *GeeksForGeeks* https://www.geeksforgeeks.org/
+* *Medium* https://medium.com/
 * *Vishalnayan* on WordPress.com
 
 **GeeksForGeeks**
@@ -281,6 +302,10 @@ A code which is directly executed by the operating system is known as Unmanaged 
 * *.NET Framework Class Library (FCL)* https://www.geeksforgeeks.org/net-framework-class-library-fcl/
 * *C# | .NET Framework (Basic Architecture and Component Stack)* https://www.geeksforgeeks.org/c-sharp-net-framework-basic-architecture-component-stack/?ref=lbp
 * *What is Just-In-Time(JIT) Compiler in .NET* https://www.geeksforgeeks.org/what-is-just-in-time-jit-compiler-in-dot-net/
+
+**Medium**
+* *“Base Class Library” (BCL) and “Framework Class Library” (FCL)* https://medium.com/@sadigrzazada20/base-class-library-bcl-and-framework-class-library-fcl-652a470261d2
+* *BCL (Base Class Library) vs FCL (Framework Class Library)* https://medium.com/@techclaw/bcl-base-class-library-vs-fcl-framework-class-library-23275062873e
 
 **Microsoft**
 * *Introduction to NET* https://learn.microsoft.com/en-us/dotnet/core/introduction
